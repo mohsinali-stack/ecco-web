@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f8;
+    padding: 30px;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Card Design */
+.card {
+    background-color: white;
+    padding: 18px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+/* Card Hover */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Laptop Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    transition: 0.4s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* Laptop Name */
+.card h2 {
+    font-size: 19px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+/* RAM and Storage */
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Price */
+.card h3 {
+    font-size: 21px;
+    color: #087cff;
+    margin-bottom: 18px;
+}
+
+/* Buy Now Button */
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0066ff, #00b4db);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #0047b3;
+    transform: scale(1.04);
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    body {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+    }
+}
+    </style>
+   
+</head>
+<body>
+         <div class="card">
+
+        <img src="./images-_18_.png" alt="laptop">
+
+        <h2>Dell XPS 15</h2>
+
+         <p>512GB SSD | 16GB RAM | Core i7</p>
+
+
+        <h3>Rs. 880,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+         <div class="card">
+
+        <img src="./images-_19_.png" alt="laptop">
+
+        <h2>HP Spectre x360</h2>
+
+         <p>1TB SSD | 16GB RAM | Core i7</p>
+
+        <h3>Rs. 880,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+         <div class="card">
+
+        <img src="./images (20).jpg" alt="laptop">
+
+        <h2>Apple MacBook Pro M3</h2>
+
+
+        <p>512GB SSD | 16GB RAM | M3 Chip</p>
+        <h3>Rs. 880,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+         <div class="card">
+
+        <img src="./images (21).jpg" alt="laptop">
+
+        <h2>Lenovo ThinkPad X1 Carbon</h2>
+
+     <p>512GB SSD | 16GB RAM | Core i7</p>
+        <h3>Rs. 880,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+
+
+
+
+    <div class="card">
+
+        <img src="./images (23).jpg" alt="Dell XPS 15">
+
+        <h2>Dell XPS 15</h2>
+
+        <p>512GB SSD | 16GB RAM | Core i7</p>
+
+        <h3>Rs. 350,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <div class="card">
+
+        <img src="./images (22).jpg" alt="HP Spectre x360">
+
+        <h2>HP Spectre x360</h2>
+
+        <p>1TB SSD | 16GB RAM | Core i7</p>
+
+        <h3>Rs. 420,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <div class="card">
+
+        <img src="./images (24).jpg" alt="Apple MacBook Pro">
+
+        <h2>Apple MacBook Pro M3</h2>
+
+        <p>512GB SSD | 16GB RAM | M3 Chip</p>
+
+        <h3>Rs. 650,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <div class="card">
+
+        <img src="./images (25).jpg" alt="ASUS ROG Strix G16">
+
+        <h2>ASUS ROG Strix G16</h2>
+
+        <p>1TB SSD | 16GB RAM | Core i7</p>
+
+        <h3>Rs. 550,000</h3>
+
+        <button>Buy Now</button>
+
+    </div>
+
+
+    <script src="./copy.js"></script>
+
+</body>
+</html>
