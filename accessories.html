@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessories Collection</title>
     <link rel="stylesheet" href="style.css">
-    <style>
+     <style>
         * {
     margin: 0;
     padding: 0;
@@ -14,61 +14,96 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f1f3f8;
     padding: 30px;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: black;
-}
-
-.container {
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
+/* Card Design */
 .card {
     background-color: white;
-    padding: 15px;
+    padding: 18px;
+    border-radius: 15px;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
 }
 
+/* Card Hover */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Laptop Image */
 .card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: contain;
+    margin-bottom: 15px;
+    transition: 0.4s;
 }
 
+.card:hover img {
+    transform: scale(1.08);
+}
+
+/* Laptop Name */
 .card h2 {
-    margin: 10px 0;
+    font-size: 19px;
+    color: #222;
+    margin-bottom: 12px;
 }
 
+/* RAM and Storage */
 .card p {
-    color: gray;
-    margin-bottom: 10px;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
 }
 
+/* Price */
 .card h3 {
-    color: blue;
-    margin-bottom: 10px;
+    font-size: 21px;
+    color: #087cff;
+    margin-bottom: 18px;
 }
 
-button {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
+/* Buy Now Button */
+.card button {
+    width: 100%;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0066ff, #00b4db);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: darkblue;
+.card button:hover {
+    background: #0047b3;
+    transform: scale(1.04);
+}
+
+/* Tablet Responsive */
+@media (max-width: 992px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+    body {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+    }
 }
     </style>
 </head>
